@@ -1,0 +1,25 @@
+<div id="navbar">
+  <div class="nav-items">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <%= link_to "Accueil", root_path %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Portefolio", portefolio_path %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Me contacter", contact_path %>
+          </li>
+        </ul>
+      </div>
+      <div class="btn-CV">
+        <%= link_to asset_path("estelle_boujenah.pdf"), target: "_blank" do %>
+          <h5 class="btn btn-light">Télécharger mon CV complet</h5>
+        <% end %>
+      </div>
+
+    </nav>
+  </div>
+</div>
