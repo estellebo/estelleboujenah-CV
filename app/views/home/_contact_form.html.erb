@@ -1,23 +1,17 @@
-<%= form_for @contact, url: home_index_path, remote: true do |f| %>
-    <div class="col-md-6">
-        <%= f.label :name %></br>
-        <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+<%= simple_form_for @contact, url: home_index_path, remote: true do |f| %>
+  <div>
+      <%= f.input  :name, required: true, placeholder: "Alan Turing", class: "contact-form-text-area form-control" %></br>
 
-        <%= f.label :email %></br>
-        <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+      <%= f.input :email, required: true, placeholder: "alan@turing.com", class: "contact-form-text-area form-control" %></br>
 
-      <%= f.label :message %></br>
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-                        placeholder: "Send me a message"%></br>
+    <%= f.input :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
+                      placeholder: "..."%></br>
 
-      <div class= "hidden">
-        <%= f.label :nickname %>
-        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
-      </div>
-
-      <%= f.submit 'Send Message', class: 'btn btn-light' %>
+    <div class= "hidden">
+      <%= f.label :nickname %>
+      <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
     </div>
-  <% end %>
-  <div class="col-md-6" id="flash-message">
-    <%= render 'flash' %>
+
+    <%= f.submit 'Send Message', class: 'btn btn-light form-control' %>
   </div>
+<% end %>

@@ -1,13 +1,21 @@
-#navbar{
-  width: 100%;
-  height: 7vh;
+.item{
+  margin-left: 50px;
+  color: white;
+  &:hover{
+    color: #d8d8d8;
+    text-decoration: none;
+  }
 }
 
-.nav-item{
-  vertical-align: center;
-  margin-right: 15px;
+.item-CV{
+  margin-right: 50px;
+  color: white;
+  &:hover{
+    color: #d8d8d8;
+    text-decoration: none;
+  }
 }
 
-.navbar-nav{
-  text-align: center;
+.navbar{
+  background-color: #3BA3BE;
 }

@@ -14,10 +14,10 @@
  *= require_self
  */
 
-
+@import "bootstrap";
 @import "components/index";
 
 .container{
-  width: 700px;
+  width: 900px;
   margin: 0 auto;
 }

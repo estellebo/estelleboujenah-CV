@@ -34,3 +34,12 @@ color: #468847;
 text-align: left;
 font-size: .8em;
 }
+
+.btn-light{
+  background-color: #3ba3be;
+  color: white;
+  &:hover{
+    background-color: #26849b;
+    color: white;
+  }
+}
